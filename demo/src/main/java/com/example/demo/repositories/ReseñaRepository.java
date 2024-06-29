@@ -1,5 +1,10 @@
 package com.example.demo.repositories;
 
-public interface ReseñaRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.example.demo.models.Reseña;
+@Repository
+public interface ReseñaRepository extends JpaRepository<Reseña,Long> {
     
 }

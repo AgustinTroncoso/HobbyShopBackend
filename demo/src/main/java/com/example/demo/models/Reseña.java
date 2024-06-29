@@ -22,13 +22,17 @@ import lombok.Setter;
 public class Reseña {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
      @Column(name = "nombre", length = 20)
     private String nombre;
 
     @Column(name = "descripcion", length = 500)
     private String descripcion;
+
+    
+    @Column(name = "estado", length = 20)
+    private String estado;
 
 
 }
