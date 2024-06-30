@@ -44,16 +44,17 @@ public class ProductoServices {
     }
 
     public Producto updateBook(Producto productoDetails) throws Exception {
-        Producto prodcutoToUpdate = productoRepository.findById(productoDetails.getId())
+        Producto productoToUpdate = productoRepository.findById(productoDetails.getId())
             .orElseThrow(() -> new Exception("This book doesn't exist!"));
 
-            prodcutoToUpdate.setNombreproducto(productoDetails.getNombreproducto());
-            prodcutoToUpdate.setPrecio(productoDetails.getPrecio());
-            prodcutoToUpdate.setDescripcion(productoDetails.getDescripcion());
-            prodcutoToUpdate.setStock(productoDetails.getStock());
-            prodcutoToUpdate.setImageUrl(productoDetails.getImageUrl());
+            productoToUpdate.setNombreproducto(productoDetails.getNombreproducto());
+            productoToUpdate.setPrecio(productoDetails.getPrecio());
+            productoToUpdate.setDescripcion(productoDetails.getDescripcion());
+            productoToUpdate.setStock(productoDetails.getStock());
+            productoToUpdate.setCategoria(productoDetails.getCategoria());
+            productoToUpdate.setImageUrl(productoDetails.getImageUrl());
 
-            return productoRepository.save(prodcutoToUpdate);
+            return productoRepository.save(productoToUpdate);
     }
 
 

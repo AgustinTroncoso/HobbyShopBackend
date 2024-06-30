@@ -27,7 +27,7 @@ public class ReseñaController {
     
     private final ReseñaServices reseñaServices;
 
-        @GetMapping
+        @GetMapping("/todo")
     public ResponseEntity<?> getAllReseña() throws Exception {
         try {
             return ResponseEntity.ok(reseñaServices.getAll());
@@ -36,7 +36,7 @@ public class ReseñaController {
         }
     }
 
-    @PostMapping
+    @PostMapping("/crear")
     public ResponseEntity<?> createReseña(@RequestBody Reseña reseñaToCreate) throws Exception {
         try {
             return ResponseEntity.ok(reseñaServices.createReseña(reseñaToCreate));
@@ -56,7 +56,7 @@ public class ReseñaController {
     }
 
     
-    @PutMapping
+    @PutMapping("/alterar")
     public ResponseEntity<?> updateReseña(@RequestBody Reseña reseñaToUpdate) throws Exception {
         try {
             return ResponseEntity.ok(reseñaServices.updateReseña(reseñaToUpdate));

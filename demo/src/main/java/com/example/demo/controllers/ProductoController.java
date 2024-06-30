@@ -25,7 +25,7 @@ public class ProductoController {
 
     private final ProductoServices productoServices;
 
-        @GetMapping
+        @GetMapping("/todo")
     public ResponseEntity<?> getAllProducto() throws Exception {
         try {
             return ResponseEntity.ok(productoServices.getAll());
@@ -34,7 +34,7 @@ public class ProductoController {
         }
     }
 
-    @PostMapping
+    @PostMapping("/crear")
     public ResponseEntity<?> createProducto(@RequestBody Producto productoToCreate) throws Exception {
         try {
             return ResponseEntity.ok(productoServices.createProducto(productoToCreate));
@@ -54,7 +54,7 @@ public class ProductoController {
     }
 
     
-    @PutMapping
+    @PutMapping("/alterar")
     public ResponseEntity<?> updateProducto(@RequestBody Producto bookToUpdate) throws Exception {
         try {
             return ResponseEntity.ok(productoServices.updateBook(bookToUpdate));
