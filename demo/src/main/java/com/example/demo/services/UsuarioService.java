@@ -13,14 +13,14 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class UsuarioService {
 
-    public final UsuarioRepository usuarioRepository;
+    private final UsuarioRepository usuarioRepository;
 
     public Usuario registrarUsuario(Usuario usuario) {
         return usuarioRepository.save(usuario);
     } 
 
     public Usuario loginUsuario(String email, String password) {
-        return usuarioRepository.findByEmailAndPassword(email, password);
+        return usuarioRepository.findByCorreoAndContraseña(email, password);
     }
 
     public Optional<Usuario> getUsuarioById(Long id) {

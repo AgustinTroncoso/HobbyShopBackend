@@ -1,10 +1,13 @@
 package com.example.demo.models;
 
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -14,7 +17,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "usuarios")
+@Table(name = "usuario")
 
 public class Usuario {
     
@@ -48,4 +51,6 @@ public class Usuario {
     @Column(name = "telefono", length = 12)
     private String telefono;
 
+    @OneToMany(mappedBy = "usuario")
+    private List<Compra> compras;
 }
