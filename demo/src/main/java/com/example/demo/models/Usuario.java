@@ -3,6 +3,8 @@ package com.example.demo.models;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -56,8 +58,10 @@ public class Usuario {
     private List<Historial> compras;
 
      @OneToMany(mappedBy = "comprador")
+      @JsonIgnore
     private List<Carrito> carritosComprador = new ArrayList<>();
 
     @OneToMany(mappedBy = "vendedor")
+    @JsonIgnore
     private List<Carrito> carritosVendedor = new ArrayList<>();
 }
