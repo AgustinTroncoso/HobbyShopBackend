@@ -1,5 +1,7 @@
 package com.example.demo.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,6 +37,21 @@ public class CarritoService {
     }
 
     
+
+    public void eliminarProductoDelCarrito(Long compradorId, Long productoId) {
+
+        Carrito carrito = carritoRepository.findFirstByCompradorId(compradorId)
+                .orElseThrow(() -> new RuntimeException("Carrito no encontrado para el comprador con ID: " + compradorId));
+
+        Producto producto = carrito.getProductos().stream()
+                .filter(p -> p.getId().equals(productoId))
+                .findFirst()
+                .orElseThrow(() -> new RuntimeException("Producto no encontrado en el carrito con ID: " + productoId));
+
+        
+        carrito.getProductos().remove(producto);
+        carritoRepository.save(carrito);
+    }
     public Carrito agregarProducto(Long carritoId, Producto producto) {
         Carrito carrito = carritoRepository.findById(carritoId)
                 .orElseThrow(() -> new RuntimeException("Carrito no encontrado"));
@@ -45,6 +62,14 @@ public class CarritoService {
         carrito.getProductos().add(productoExistente);
 
         return carritoRepository.save(carrito);
+    }
+
+    
+    public List<Producto> obtenerProductosPorComprador(Long compradorId) {
+        Carrito carrito = carritoRepository.findFirstByCompradorId(compradorId)
+                .orElseThrow(() -> new RuntimeException("Carrito no encontrado para el comprador con ID: " + compradorId));
+
+        return carrito.getProductos();
     }
  
 }

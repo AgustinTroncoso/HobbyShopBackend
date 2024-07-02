@@ -35,6 +35,11 @@ public class ProductoController {
         }
     }
 
+    @GetMapping("/{id}")
+    public Producto getProductoById(@PathVariable Long id) throws Exception {
+        return productoServices.getProductoByID(id);
+    }
+
     @PostMapping("/crear")
     public ResponseEntity<?> createProducto(@RequestBody Producto productoToCreate) throws Exception {
         try {
