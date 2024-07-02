@@ -33,7 +33,7 @@ public class ProductoServices {
 
     public void deleteProductoByID(Long ID) throws Exception {
         if (!productoRepository.existsById(ID)) {
-            throw new Exception("This book doesn't exist!");
+            throw new Exception("Este Producto no existe!!");
         }
         productoRepository.deleteById(ID);
     }
@@ -43,9 +43,9 @@ public class ProductoServices {
         return productoRepository.save(ProductoToCreate);
     }
 
-    public Producto updateBook(Producto productoDetails) throws Exception {
+    public Producto updateProducto(Producto productoDetails) throws Exception {
         Producto productoToUpdate = productoRepository.findById(productoDetails.getId())
-            .orElseThrow(() -> new Exception("This book doesn't exist!"));
+            .orElseThrow(() -> new Exception("Este Producto no existe!"));
 
             productoToUpdate.setNombreproducto(productoDetails.getNombreproducto());
             productoToUpdate.setPrecio(productoDetails.getPrecio());
