@@ -1,5 +1,6 @@
 package com.example.demo.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.Column;
@@ -53,4 +54,10 @@ public class Usuario {
 
     @OneToMany(mappedBy = "usuario")
     private List<Historial> compras;
+
+     @OneToMany(mappedBy = "comprador")
+    private List<Carrito> carritosComprador = new ArrayList<>();
+
+    @OneToMany(mappedBy = "vendedor")
+    private List<Carrito> carritosVendedor = new ArrayList<>();
 }
