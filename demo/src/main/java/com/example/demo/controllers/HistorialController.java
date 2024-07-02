@@ -11,24 +11,24 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.models.Compra;
-import com.example.demo.services.CompraService;
+import com.example.demo.models.Historial;
+import com.example.demo.services.HistorialService;
 
 import lombok.RequiredArgsConstructor;
 
-@RequestMapping("/api/compras")
+@RequestMapping("/api/historial")
 @RestController
 @RequiredArgsConstructor
 @Validated
 @CrossOrigin(origins = "*")
-public class CompraController {
+public class HistorialController {
     
-    private final CompraService compraService;
+    private final HistorialService historialService;
 
     @GetMapping("/historial/{usuario_id}")
-    public ResponseEntity<List<Compra>> getPurchase(@PathVariable Long usuario_id) {
+    public ResponseEntity<List<Historial>> getHistory(@PathVariable Long usuario_id) {
         try {
-            return ResponseEntity.ok(compraService.getPurchase(usuario_id));
+            return ResponseEntity.ok(historialService.getHistory(usuario_id));
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }

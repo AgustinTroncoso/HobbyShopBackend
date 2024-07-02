@@ -19,9 +19,9 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "compras")
+@Table(name = "historial")
 
-public class Compra {
+public class Historial {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

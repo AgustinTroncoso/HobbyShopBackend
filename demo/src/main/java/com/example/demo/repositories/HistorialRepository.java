@@ -5,11 +5,11 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.models.Compra;
+import com.example.demo.models.Historial;
 
 @Repository
-public interface CompraRepository extends JpaRepository<Compra,Long>{
+public interface HistorialRepository extends JpaRepository<Historial,Long>{
     
-    List<Compra> findByUsuarioId(Long id);
+    List<Historial> findByUsuarioId(Long id);
 
 }

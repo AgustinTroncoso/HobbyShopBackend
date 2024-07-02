@@ -52,5 +52,5 @@ public class Usuario {
     private String telefono;
 
     @OneToMany(mappedBy = "usuario")
-    private List<Compra> compras;
+    private List<Historial> compras;
 }
