@@ -56,9 +56,9 @@ public class ProductoController {
 
     
     @PutMapping("/alterar")
-    public ResponseEntity<?> updateProducto(@RequestBody Producto productoToUpdate) throws Exception {
+    public ResponseEntity<?> updateProducto(@RequestBody Producto bookToUpdate) throws Exception {
         try {
-            return ResponseEntity.ok(productoServices.updateProducto(productoToUpdate));
+            return ResponseEntity.ok(productoServices.updateBook(bookToUpdate));
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
