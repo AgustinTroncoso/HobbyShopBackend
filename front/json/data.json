@@ -1,0 +1,191 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombreproducto": "Figura de acción Spider-Man",
+      "precio": "19.99",
+      "idvendedor": "1",
+      "Descripcion": "Figura de acción de Spider-Man con articulaciones",
+      "stock": "10",
+      "imageUrl": "https://ansaldo.cl/wp-content/uploads/2024/02/32483.jpg"
+    },
+    {
+      "id": "2",
+      "nombreproducto": "Figura de acción Iron Man",
+      "precio": "24.99",
+      "idvendedor": "2",
+      "Descripcion": "Figura de acción de Iron Man con luces y sonidos",
+      "stock": "7",
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_798647-MLA74805994881_022024-O.webp"
+    },
+    {
+      "id": "3",
+      "nombreproducto": "Figura de acción Batman",
+      "precio": "19.99",
+      "idvendedor": "3",
+      "Descripcion": "Figura de acción de Batman con capa y accesorios",
+      "stock": "12",
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_993943-MLA69550029422_052023-O.webp"
+    },
+    {
+      "id": "4",
+      "nombreproducto": "Figura de acción Superman",
+      "precio": "19.99",
+      "idvendedor": "4",
+      "Descripcion": "Figura de acción de Superman con base",
+      "stock": "5",
+      "imageUrl": "https://falabella.scene7.com/is/image/Falabella/gsc_112658099_351738_1?wid=1500&hei=1500&qlt=70"
+    },
+    {
+      "id": "5",
+      "nombreproducto": "Figura de acción Wonder Woman",
+      "precio": "19.99",
+      "idvendedor": "5",
+      "Descripcion": "Figura de acción de Wonder Woman con espada y escudo",
+      "stock": "8",
+      "imageUrl": "https://irion.cl/cdn/shop/files/imex_6056902_20124661_778988307151_a.jpg?v=1705095806"
+    },
+    {
+      "id": "6",
+      "nombreproducto": "Figura de acción Hulk",
+      "precio": "24.99",
+      "idvendedor": "6",
+      "Descripcion": "Figura de acción de Hulk con articulaciones",
+      "stock": "3",
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_954803-MCO49482565087_032022-O.webp"
+    },
+    {
+      "id": "7",
+      "nombreproducto": "Figura de acción Capitán América",
+      "precio": "19.99",
+      "idvendedor": "7",
+      "Descripcion": "Figura de acción de Capitán América con escudo",
+      "stock": "9",
+      "imageUrl": "https://fotosol.cl/cdn/shop/files/figura-avengers-end-game-titan-hero-series-capitan-america-3_1200x.jpg?v=1690827024"
+    },
+    {
+      "id": "8",
+      "nombreproducto": "Figura de acción Thor",
+      "precio": "19.99",
+      "idvendedor": "8",
+      "Descripcion": "Figura de acción de Thor con martillo",
+      "stock": "6",
+      "imageUrl": "https://falabella.scene7.com/is/image/Falabella/17021352_1?wid=1500&hei=1500&qlt=70"
+    },
+    {
+      "id": "9",
+      "nombreproducto": "Figura de acción Black Widow",
+      "precio": "19.99",
+      "idvendedor": "9",
+      "Descripcion": "Figura de acción de Black Widow con armas",
+      "stock": "11",
+      "imageUrl": "https://cdnx.jumpseller.com/avso-toyz-store/image/39101609/resize/900/900?1693507694"
+    },
+    {
+      "id": "10",
+      "nombreproducto": "Figura de acción Hawkeye",
+      "precio": "19.99",
+      "idvendedor": "10",
+      "Descripcion": "Figura de acción de Hawkeye con arco y flechas",
+      "stock": "4",
+      "imageUrl": "https://home.ripley.cl/store/Attachment/WOP/D175/2000361091332/2000361091332_2.jpg"
+    },
+    {
+      "id": "11",
+      "nombreproducto": "Figura de acción Joker",
+      "precio": "19.99",
+      "idvendedor": "11",
+      "Descripcion": "Figura de acción de Joker con baraja de cartas",
+      "stock": "13",
+      "imageUrl": "https://falabella.scene7.com/is/image/Falabella/gsc_113489138_662631_1?wid=800&hei=800&qlt=70"
+    },
+    {
+      "id": "12",
+      "nombreproducto": "Figura de acción Harley Quinn",
+      "precio": "19.99",
+      "idvendedor": "12",
+      "Descripcion": "Figura de acción de Harley Quinn con bate de béisbol",
+      "stock": "2",
+      "imageUrl": "https://falabella.scene7.com/is/image/Falabella/gsc_114433584_1008748_1?wid=800&hei=800&qlt=70"
+    },
+    {
+      "id": "13",
+      "nombreproducto": "Figura de acción Thanos",
+      "precio": "24.99",
+      "idvendedor": "13",
+      "Descripcion": "Figura de acción de Thanos con guantelete del infinito",
+      "stock": "15",
+      "imageUrl": "https://falabella.scene7.com/is/image/Falabella/12570399_1?wid=800&hei=800&qlt=70"
+    },
+    {
+      "id": "14",
+      "nombreproducto": "Figura de acción Groot",
+      "precio": "19.99",
+      "idvendedor": "14",
+      "Descripcion": "Figura de acción de Groot con brazos articulados",
+      "stock": "1",
+      "imageUrl": "https://falabella.scene7.com/is/image/Falabella/gsc_119984793_2557011_3?wid=800&hei=800&qlt=70"
+    },
+    {
+      "id": "15",
+      "nombreproducto": "Figura de acción Darth Vader",
+      "precio": "19.99",
+      "idvendedor": "15",
+      "Descripcion": "Figura de acción de Darth Vader con sable de luz",
+      "stock": "14",
+      "imageUrl": "https://hasbrostore.cl/17399-large_default/figura-star-wars-obi-wan-kenobi-serie-darth-vader.jpg"
+    }
+  ],
+  "carrito": [
+    {
+      "id": "15",
+      "nombreproducto": "Figura de acción Darth Vader",
+      "precio": "19.99",
+      "idvendedor": "15",
+      "Descripcion": "Figura de acción de Darth Vader con sable de luz",
+      "cantidad": "1",
+      "imageUrl": "https://hasbrostore.cl/17399-large_default/figura-star-wars-obi-wan-kenobi-serie-darth-vader.jpg"
+    },
+    {
+      "id": "1a2f",
+      "nombreproducto": "Figura de acción Spider-Man",
+      "precio": "19.99",
+      "imageUrl": "https://example.com/spiderman.jpg",
+      "stock": "10",
+      "descripcion": "Figura de acción de Spider-Man con articulaciones"
+    }
+  ],
+  "reseña": [
+    {},
+    {
+      "id": null,
+      "nombre": "dds",
+      "descripcion": "dds"
+    },
+    {
+      "id": 1,
+      "nombre": "wwe",
+      "descripcion": "ww"
+    }
+  ],
+  "historial": [
+    {
+      "id": "1",
+      "nombreproducto": "Figura de acción Spider-Man",
+      "precio": "19.99",
+      "imageUrl": "https://example.com/spiderman.jpg",
+      "fecha": "2021-10-10",
+      "cantidad": "1",
+      "descripcion": "Figura de acción de Spider-Man con articulaciones"
+    },
+    {
+      "id": "2",
+      "nombreproducto": "Figura de acción Darth Vader",
+      "precio": "19.99",
+      "imageUrl": "https://hasbrostore.cl/17399-large_default/figura-star-wars-obi-wan-kenobi-serie-darth-vader.jpg",
+      "fecha": "2021-10-10",
+      "cantidad": "2",
+      "descripcion": "Figura de acción de Darth Vader con sable de luz"
+    }
+  ]
+}
