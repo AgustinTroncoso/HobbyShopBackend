@@ -25,7 +25,7 @@ public class Producto {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     
-    @Column(name="nombreproducto", length=8)
+    @Column(name="nombreproducto", length=50)
     private String nombreproducto;
 
     @Column(name="precio", length=30)

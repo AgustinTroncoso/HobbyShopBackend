@@ -11,7 +11,7 @@
         <span class="vendedor">Vendedor: Andrés</span>
         <span class="stock">Stock: {{ stock }}</span>
       </div>
-      <span class="descripcion">Descripcion:<br />{{ Descripcion }}</span>
+      <span class="descripcion">descripcion:<br />{{ descripcion }}</span>
       <button class="compra" @click="comprarProducto">Comprar</button>
       <button class="eliminar" @click="eliminarProducto">Eliminar</button>
       <RouterLink to="/Resenacreacion">Reseñar</RouterLink>
@@ -33,7 +33,7 @@ const nombreproducto = ref('');
 const precio = ref('');
 const imageUrl = ref('');
 const stock = ref('');
-const Descripcion = ref('');
+const descripcion = ref('');
 
 const fetchProducto = async () => {
   try {
@@ -43,7 +43,7 @@ const fetchProducto = async () => {
     precio.value = producto.precio;
     imageUrl.value = producto.imageUrl;
     stock.value = producto.stock;
-    Descripcion.value = producto.Descripcion;
+    descripcion.value = producto.descripcion;
   } catch (error) {
     console.error('Error al cargar el producto:', error);
   }
@@ -57,7 +57,7 @@ const comprarProducto = async () => {
       precio: precio.value,
       imageUrl: imageUrl.value,
       stock: stock.value,
-      descripcion: Descripcion.value
+      descripcion: descripcion.value
     };
 
     const response = await axios.post('http://localhost:8080/api/carritos/1/agregar-producto', productoCarrito);
